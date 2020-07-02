@@ -1,0 +1,16 @@
+h1 {
+    margin-left: 300px;
+    font-family: cursive;
+    color: seagreen;
+    border: 10px solid gold;
+    display: inline;
+}
+h2 {
+    padding-left: 100px;
+    color: blueviolet;
+    
+}
+
+h4 {
+    color: red;
+}

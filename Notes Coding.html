@@ -1,0 +1,145 @@
+<!--use the doctype to tell the browser how to interprupt the page-->
+<!DOCTYPE html>
+<html>
+<head>
+<title>Title of Page</title>
+<link rel="stylesheet" href="Notes Coding.css">
+</head>
+<body>
+    <h1>Lesson 1 notes revision</h1>
+        <p>Always start your html off with a !DOCTYPE (this tells the browser how to interprupt your code), and open your code body with < html > (and close) When saving your file, save it as either an html, css, or js extension.</p>
+        <p>A document outline should be as followed: Body -> Header -> Navigation -> Section -> Article -> Footer <br> Navigation must include < li > and < a > to navigate around site. <br> Sections have headers. <br>Articles have headers and footers, or < aside >.</p>
+        <p>To put a comment into your code, but to not be read on the page, use < ! -- (enter text) - - ></p>
+
+<div><h2>There are 3 structure tags used: </h2> 
+  <p>< p > is for paragraphs < /pr > <br> < br > is for line breaks, no closure needed <br> < div > is a container and can include paragraphs and other element <p /div > </p>
+</div>
+
+<div><h2>Image Elements<button onclick="imageelement()">Image Element</button></h2>
+</div>
+
+<div> <h2> Tag Attributes<button onclick="tagattribute()">Tag Attribute</button></h2>
+</div>
+
+<div><h2>The Anchor Element (add Hyperlinks)<button onclick="anchorelement()">Anchor Element </button></h2>
+</div>
+
+<div><h2>Input Element (Getting information from a user) <button onclick=inputelement()>Input Element</button></h2>
+</div>
+
+<Div><h2>Button Element (2 methods)</h2>
+  <p><h4>#1</h4> Using input method and adding an attribute and a value: <br> < input type="button" value="Click!" >, gives you: <input type="button" value="Click!"> <br>
+  <h4>#2</h4> Using the button tag: < button > Click! < /button >, gives you: <button> Click! </button>
+  <h3>To Activate a Button Use onclick attribute</h3>
+  < button onclick=FUNCTION() > CLICK! < /button > Will activate the FUNCTION() when clicked. If function is an alert, youll get this: <button onclick="alert('You did it correctly!!!')">CLICK!</button><br> (Watch syntax. Alert must be wrapped in quotations: "alert('TEXT')" and your text must have apostrophes around it)
+  </p>
+</Div>
+
+<Div><h2>Creating a List<button onclick="creatinglist()">Click For Code</button></h2>
+
+  <h4>Ordered List < ol > < /ol > <br> Unordered List < ul > < /ul ><br>
+Adding Items < li > < /li ></h4>
+<ol> Ordered List
+    <li> Item 1</li>
+    <li>Item 2</li>
+    <ul>Adding an unordered list:
+        <li>Object A</li>
+        <li>Object B</li>
+    </ul>
+    <li> Item 3 </li>
+    <li>Item 4    </li>
+    <ul>Add more unordered lists
+    <li>Object C</li></ul>
+    </ol>
+    You can add lists inside of lists reffered to as Nested.
+</Div>
+
+<div><h2>Semantic Tags:</h2>
+  <p>Bold: < strong > <strong>TEXT</strong> < /strong> <br>Italics: < i > <i>TEXT</i> < /i > <br>Heading Tags: < h(1-6) > TEXT < /h(1-6) >, 1=Largest to 6=Smallest
+  </p>
+</div>
+
+<div><h2>Table Elements<button onclick="tableelement()">Table Code</button><br></h2>
+  <p>Tabular format as seen in Excel is displayed in rows and columns. <br>Tags: <br> < th > <strong>Table Headers, Bold and Center</strong> < /th > <br> < thead > <strong>Table Head</strong> < /thead > <br> < tbody > <strong>able Body</strong> < /tbody > <br> < tfoot > <strong>Table Foot</strong> < /tfoot > 
+  </p> 
+<p>Simple table with header</p>
+<table>
+  <tr>
+    <th>First name</th>
+    <th>Last name</th>
+  </tr>
+  <tr>
+    <td>John</td>
+    <td>Doe</td>
+  </tr>
+  <tr>
+    <td>Jane</td>
+    <td>Doe</td>
+  </tr>
+</table></div>
+
+<div><h2>HTML Forms- Collecting Info</h2>
+  <p>< form > < /form > Use < input > to collect information from user. <br>I.e. < input type="text" id="firstName" name="first" /> <input type="text" id="firstName" name="first"/> <br>To add a label use: < label > First Name < /label > before input line. <label> First Name </label><input type="text" id="firstName" name="first"/> 
+  <h3>OR</h3> < label for="firstName"(<- id) > First Name < /label > AND then < input ><label for="firstName"> First Name </label > <input type="text" id="firstName" name="first"/> 
+  </p>
+</div>
+    
+<p><h2>PlaceHolders</h2> < input type="text" id="firstName" name="first" placeholder="First Name" /> <input type="text" id="firstName" name="first" placeholder="First Name"/>
+</p>
+
+<p><h2>Validating Form Input Data</h2> Ensuring some information is inputed. <br>< input name="firstName" required="true" /><br><strong>OR</strong><br> < input name="firstName" required /> <br> <br>Input Type valid for validation: "email" "url" "tel" "age"
+</p>
+
+<p><h2>Validating Value Range</h2>
+    < input name="age" type="number" min="13" max="120" /> 
+</p>
+
+<p><h2>Text Area Element</h2> To put a text are (comment field) use: < textarea rows="10" cols="50" name="message" > < /textarea > <br><textarea rows="10" cols="50" name="message"> </textarea><br>Don't forget to add a sumbit button!
+</p>
+
+<p><h2>Drop Down Lists <button onclick=dropdownlist()>Code</button></h2> 
+  Use < select > to give a drop down list. <br>
+  
+  <form><select name="color"><option value="R">Red</option><option value="B">Blue</option><option value="G">Green</option><option value="W">White</option></select></form ><br>
+</p>
+
+<p><h2>Form Checkboxes (multiple selection)<button onclick=formcheckboxes()>Code</button></h2>
+  <form> <input type="Checkbox" id="red" name="colorRed" vaule="R"/> <label for="red">Red</label></input><input type="Checkbox" id="green" name="colorRed" vaule="G"/> <label for="green">Green</label></input><input type="Checkbox" id="blue" name="colorRed" vaule="B"/> <label for="blue">Blue</label></input><input type="Checkbox" id="white" name="colorRed" vaule="W"/> <label for="white">White</label></input></form> 
+</form>
+</p>
+
+<p><h2>Form Radio Buttons (single selection) <button onclick=formradiobuttons()>Code</button></h2>
+<form> <input type="radio" id="weatherSun" name="Weather" value="Sun"/><label for="weatherRain">Sun</label><br><input type="radio" id="weatherRain" name="Weather" value="Rain"/><label for="weatherRain">Rain</label><br><input type="radio" id="weatherCloudy" name="Weather" value="Cloudy"/><label for="weatherCloudy">Cloudy</label><br>
+</form>
+</p>
+
+<p><h2>Submitting the Form</h2>
+<input type="submit" value="Submit"> < input type="submit" value="Submit" ><br><h4>Or</h4> <button type="submit">Submit Me</button>< button type="submit" > Submit Me < /button > <br><strong> This Submit Me must have a type attribute!!!</strong>
+</p>
+
+<p><h2>Full Form Example<button onclick=fullformexample()>Code</button></h2>
+  <form>
+    First Name: <input type="text" name="firstname" placeholder="First Name"><br>
+    Last Name: <input type="text" name="lastname" placeholder="Last Name"><br>
+    Gender:
+    <select name="gender">
+      <option selected value="M">Male</option>
+      <option value="F">Female</option>
+      <option value="O">Other</option>
+    </select><br>
+    Age: <br>
+    <input type="radio" id="Child" name="age" value="0-17"/>
+    <label for="Child">0-17</label><br>
+    <input type="radio" id="Adult1" name="age" value="18-40"/>
+    <label for="Adult1">18-40</label><br>
+    <input type="radio" id="Adult2" name="age" value="41-60"/>
+    <label for="Adult2">41-60</label><br>
+    <input type="radio" id="Adult3" name="age" value="61 and above"/>
+    <label for="Adult3">61 and above</label><br>
+    <button type="submit">Submit Me</button>
+  </form> 
+</p>
+
+<script src="Notes Coding.js"></script>
+</body>
+</html>
