@@ -7,27 +7,35 @@
     <h1>CSS <br>Cascading Style Sheet</h1>
     <h3>CSS Syntax</h3>
     <div><h4>3 Methods to add style to your page.</h4>
-    <p><button onclick=stylemethod1()>Style Method #1</button><button onclick=stylemethod2()>Style Method #2</button><button onclick=stylemethod3()>Style Method #3</button></p>
+    <p><button onclick=stylemethod1()>Style Method #1</button>
+        <button onclick="stylemethod2()">Style Method #2</button>
+        <button onclick="stylemethod3()">Style Method #3</button>
+    </p>
     </div>
-
-    <div><button onclick=coloringtext() class="coloringtext">Coloring Text</button></div>
 <br>
-    <div><button onclick=coloringtext() class="backgroundcolor">Background Color</button></div>
-<br>
-    <div><button onclick=fontsize() class="fontsize">Font Size and Weight</button></div>
-<br>
-<div><button onclick=fontfamily() class="fontfamily">Font Family</button></div>
-<br>
-    <div><button onclick=textweight() class="textweight">Text Weight/Bold</button></div>
-<br>
-<div><button onclick=selectors() class="selectors">Selectors</button>
+    <div><button onclick="coloringtext()" class="coloringtext">Coloring Text</button>
+    </div>
+    <br>    
+    <div><button onclick="coloringtext()" class="backgroundcolor">Background Color</button>
+    </div>
+    <br>    
+    <div><button onclick="fontsize()" class="fontsize">Font Size and Weight</button>
+    </div>
+    <br>
+    <div><button onclick="fontfamily()" class="fontfamily">Font Family</button>
+    </div>
+    <br>
+    <div><button onclick="textweight()" class="textweight">Text Weight/Bold</button>
+    </div>
+    <br>
+    <div><button onclick="selectors()" class="selectors">Selectors</button>
     Selectors are global attributes. Class can be used in multiple coding lines, ID must be unique. <strong>Priority: ID > Class > Element</strong> (p, div) CSS File is read top to bottom, bottom coding is applied over upper coding. <br>*Mid-text formatting, use < span id=NAME > TEXT < /span >
-</div>
-<br>
-<div><button onclick=pseudoclasses() class="pseudoclasses">Pseudo Classes</button>
-    <a href="https://www.w3schools.com/css/css_pseudo_classes.asp" target="_blank">Click here for more Pseudo Class info</a>
-</div>
-<br>
+    </div>
+    <br>
+    <div><button onclick="pseudoclasses()" class="pseudoclasses">Pseudo Classes</button>
+        <a href="https://www.w3schools.com/css/css_pseudo_classes.asp" target="_blank">Click here for more Pseudo Class info</a>
+    </div>
+    <br>
 
-    <script href="css.js"></script>
+<script src="css.js"></script>
 </body>
