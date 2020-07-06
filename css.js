@@ -29,3 +29,11 @@ function textweight(){
 function selectors (){
     alert("Use ID (#) or Class (.) to specify selection name. \n <body> \n <p id=\"SELECTIONNAME\"> TEXT </p> \n <class class=\"SELECTIONNAME\"> TEXT </class> \n #SELECTIONNAME { \n color: black; \n } \n .SELECTIONNAME { \n color: white; \n }")
 }
+
+function pseudoclasses(){
+    alert("A pseudo-class is a selector that selects elements that are in a specific state, e.g. they are the first element of their type, or they are being hovered over by the mouse pointer.\n Style according to relation to other elements, or user activity with element. \n <body> \n <a id=\"topic-link\" href=\"URL\"> TEXT </a> \n </body> \n To make text red! \n #topic-link { \n color: red; \n } \n #topic-link: visited { \n color:red \n } \n use : visited \n : hover \n : checked \n etc...")
+}
+
+function fontfamily(){
+    alert("p{ \n font-family: san-serif; \n } \n USE Google for more fonts (font names with spaces must be wrapped in ' ' \n IF OS does not have font, give multiple options: \n font-family: 'Trebuchet MS', arial, helvetica, sans-serif \n } \n The first has priority, OS will go to next if first is not available.")
+}
